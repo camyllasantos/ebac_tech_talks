@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="RBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 25m 10s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -36,10 +37,53 @@
                 </a>
             </div>
         </div>
-
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Font-End</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, enim dolores commodi ipsum repellendus ab eaque dolorem accusamus. Consequatur vitae debitis molestiae nam. Numquam sunt deleniti unde fuga error cumque.
+                </p>
+            </div>
+            <img class="event__images" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--images-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">UI/UX</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, enim dolores commodi ipsum repellendus ab eaque dolorem accusamus. Consequatur vitae debitis molestiae nam. Numquam sunt deleniti unde fuga error cumque.
+                </p>
+            </div>
+            <img class="event__images" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Data Science</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, enim dolores commodi ipsum repellendus ab eaque dolorem accusamus. Consequatur vitae debitis molestiae nam. Numquam sunt deleniti unde fuga error cumque.
+                </p>
+            </div>
+            <img class="event__images" src="./images/frontend.png" alt="data">
+        </div>
+    </section>
+    <section class="event event--back-end event--images-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Back-End</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, enim dolores commodi ipsum repellendus ab eaque dolorem accusamus. Consequatur vitae debitis molestiae nam. Numquam sunt deleniti unde fuga error cumque.
+                </p>
+            </div>
+            <img class="event__images" src="./images/frontend.png" alt="backend">
+        </div>
+    </section>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
